@@ -1,0 +1,265 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+.top-title {
+  /* TODO: css_1:Headerを書いていこう！ */
+  font-family: "Caveat", cursive;
+}
+
+/* Header */
+/* TODO: css_2:Headerを書いていこう！ */
+.site-header {
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  background-color: #3333339a;
+}
+
+.site-logo {
+  margin-left: 20px;
+}
+
+.site-logo a {
+  text-decoration: none;
+  color: #fff;
+}
+.site-logo a img {
+  width: 20%;
+  display: flex;
+  align-items: center;
+}
+.pc-nav {
+  margin: 0 0 0 auto;
+}
+.nav-menu {
+  /* TODO: css_3:Headerを書いていこう！ */
+  display: flex;
+  font-size: 16px;
+  list-style: none;
+  margin-right: 20px;
+}
+
+.nav-menu-items {
+  margin-left: 30px;
+}
+
+.nav-menu-items a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.sp-nav {
+  display: none;
+}
+
+/* SlideShow */
+.swiper-container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  z-index: -1;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* TODO: css_4: Swiperを実装してみよう！ */
+.top-title {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  font-size: 100px;
+}
+
+/* Description */
+.description-text {
+  text-align: center;
+  line-height: 3rem;
+  font-size: 1.4rem;
+}
+
+/* HorizontalRule */
+.rule {
+  height: 0px;
+  border-radius: 1px;
+  border: 1px solid rgb(100, 100, 100);
+  width: 80%;
+  margin: 3rem auto 1rem;
+}
+
+/* SubTitle */
+.sub-title {
+  font-size: 2.4rem;
+  text-align: center;
+  margin: 10rem 0 4rem;
+}
+
+/* Profile */
+.profile {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+#profile-img {
+  width: 375px;
+  height: 375px;
+  padding: 0 4rem;
+}
+/* TODO: css_5:Webサイトのコンテンツを作ろう！ */
+
+/* Works */
+
+/* Access */
+
+/* Promotion */
+
+/* Footer */
+.site-footer {
+  margin-top: 6rem;
+  background-color: #333;
+  width: 100%;
+  height: 60px;
+}
+
+.copyright {
+  color: #fff;
+  text-align: center;
+  padding-top: 20px;
+}
+
+@media screen and (max-width: 480px) {
+  .pc-nav {
+    display: none;
+  }
+  .sp-nav {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: block;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  .sp-nav ul {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  .sp-nav li {
+    margin: 0;
+    padding: 0;
+  }
+  .sp-nav li span {
+    font-size: 15px;
+    color: #fff;
+  }
+  .sp-nav li a,
+  .sp-nav li span {
+    display: block;
+    padding: 20px 0;
+  }
+  /*基準となるli要素*/
+  .sp-nav .close {
+    position: relative;
+    padding-left: 20px;
+  }
+  /*バツ印線1*/
+  .sp-nav .close::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: block;
+    width: 16px;
+    height: 1px;
+    background: #fff;
+    transform: rotate(45deg);
+  }
+  /*バツ印線2*/
+  .sp-nav .close::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: block;
+    width: 16px;
+    height: 1px;
+    background: #fff;
+    transform: rotate(-45deg);
+  }
+  #hamburger {
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 25px;
+    margin: 0 20px 0 auto;
+  }
+  #hamburger span {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+    transform: translateY(-50%);
+  }
+  #hamburger::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+  }
+  #hamburger::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 70%;
+    height: 2px;
+    background-color: #fff;
+  }
+  .toggle {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  .swiper-slide img {
+    height: 100vh;
+  }
+  .works {
+    margin: 0 10px;
+    width: auto;
+  }
+}

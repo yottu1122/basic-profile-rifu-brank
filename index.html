@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>自己紹介サイト</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Caveat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="site-header">
+      <h1 class="site-logo">
+        <a href=""><img src="img/logo.png" /></a>
+      </h1>
+      <!-- TODO: html_2:Headerを書いていこう！ -->
+      <nav class="pc-nav">
+        <ul class="nav-menu">
+          <li class="nav-menu-items">
+            <a href="#profile">Profile</a>
+          </li>
+          <li class="nav-menu-items">
+            <a href="#works">Works</a>
+          </li>
+          <li class="nav-menu-items">
+            <a href="#access">Access</a>
+          </li>
+          <li class="nav-menu-items">
+            <a href="#promotion">Promotion</a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="sp-nav" id="sp-nav">
+        <ul>
+          <li class="nav-menu-items"><a href="#profile">Profile</a></li>
+          <li class="nav-menu-items"><a href="#works">Works</a></li>
+          <li class="nav-menu-items"><a href="#access">Access</a></li>
+          <li class="nav-menu-items"><a href="#promotion">Promotion</a></li>
+          <li class="close" id="close"><span>閉じる</span></li>
+        </ul>
+      </nav>
+      <div id="hamburger">
+        <span></span>
+      </div>
+    </header>
+
+    <!-- Swiper -->
+    <div class="swiper-container">
+      <!-- TODO: html_3:Swiperを実装してみよう！ -->
+      <div class="swiper-slide">
+        <img src="" alt="" />
+      </div>
+
+      <div class="swiper-slide"></div>
+
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="img/photo1.jpg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/photo2.jpg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/photo3.jpg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/photo4.jpg" alt="" />
+        </div>
+      </div>
+      <div class="top-title">Let's enjoy Coding!</div>
+    </div>
+
+    <!-- Profile -->
+    <hr class="rule" id="profile" />
+    <h2 class="sub-title">〜 Profile 〜</h2>
+    <div class="profile">
+      <div id="profile-img">
+        <img src="img/profile.jpg" alt="profile-photo" />
+      </div>
+      <div id="profile-text">
+        <!-- TODO: html_4:Webサイトのコンテンツを作ろう！ -->
+        <!-- <p></p> -->
+      </div>
+    </div>
+
+    <!-- Works -->
+    <hr class="rule" id="works" />
+    <h2 class="sub-title">〜 Favorite 〜</h2>
+    <div class="works"></div>
+
+    <!-- Access -->
+    <hr class="rule" id="access" />
+    <h2 class="sub-title">〜 Access 〜</h2>
+    <div class="access"></div>
+
+    <!-- Promotion -->
+    <hr class="rule" id="promotion" />
+    <h2 class="sub-title">〜 Promotion 〜</h2>
+    <div class="promotion"></div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <p class="copyright"><small>&copy; 2021 Itnav</small></p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
